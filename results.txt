@@ -1,0 +1,12 @@
+Program 2 Results-
+
+Ran the program for 1,200 signals, not 100,000. 
+Total time= 68 seconds Number of signals of type SIGUSR1 sent = 640 
+
+Number of signals of type SIGUSR2 sent = 560 
+Number of signals of type SIGUSR1 received= 640 
+Number of signals of type SIGUSR2 received= 560
+Average signal reception time for SIGUSR1 signal = 1329/155 = 8.57 signals received per second 
+Average signal reception time for SIGUSR2 signal = 1504/155 = 9.7 signals received per second
+
+Signals received can be less than signals sent since sigprocmask() blocks the blocked set signals in handlers
